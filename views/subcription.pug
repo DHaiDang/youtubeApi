@@ -1,0 +1,11 @@
+doctype html
+head
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+  title Youtube Api
+body
+  h1(style="text-align: center").text-info Dang'subcription - Youtube Api
+  .container
+  ul
+    each item in subcription
+      a.ml-4(title=item.snippet.title target="_blank" href="https://www.youtube.com/channel/" + item.snippet.resourceId.channelId)
+        img.img-rounded(src=item.snippet.thumbnails.default.url)
