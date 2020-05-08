@@ -12,7 +12,6 @@ const jwt = require('jsonwebtoken')
 const google = require('googleapis').google
 const OAuth2 = google.auth.OAuth2
 
-
 app.get('/',(req,res) => {
   const oauth2client = new OAuth2(
     config.oauth2Credentials.client_id,
